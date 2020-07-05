@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tony-and-c-app"
+    }
+  },
+  "defaultProject": "tony-and-c-app",
+  "cli": {
+    "analytics": false
+  }
 }

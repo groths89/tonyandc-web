@@ -1,0 +1,8 @@
+@import '../../app.component.scss';
+fa-icon {
+    padding: 10px;
+}
+fa-icon:hover {
+    color: $hover-color;
+    cursor: pointer;
+}

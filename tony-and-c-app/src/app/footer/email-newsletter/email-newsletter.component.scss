@@ -1,0 +1,59 @@
+@import '../../app.component.scss';
+.newsletter-wrapper {
+    width: 80%;
+    min-height: 3.75em;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.newsletter-wrapper p {
+    width: 80%;
+    margin: 0 auto 8px;
+    text-align: center;
+    color: #727272;
+    font-size: 11pt;
+}
+
+.newsletter-wrapper form {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.newsletter-wrapper input {
+    margin: 0 5px 0 0;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid #CCCCCC;
+    font-size: 9pt;
+    width: 35%;
+    :focus {
+        border: 1px solid #727272;
+        border-radius: 0;
+    }    
+}
+
+
+
+.newsletter-wrapper button {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 11px 10px;
+    border: 0;
+    text-transform: uppercase;
+    font-stretch: expanded;
+    font-kerning: 12pt;
+    font-size: 9pt;
+}
+
+.newsletter-wrapper button:hover {
+    background-color: $hover-color;
+}
+
+fieldset {
+    border: 0;
+    padding: 8px 0;
+}

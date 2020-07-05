@@ -1,0 +1,65 @@
+@import '../../app.component.scss';
+fieldset {
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+input:hover {
+    border-bottom: 1px solid #636363;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+input {
+    display: block;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+    border-left: 0;
+    color: #888;
+    padding: 8px 10px;
+    margin-right: 5px;
+    font-family: 'Lato', Arial, Verdana, Tahoma, Sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    float: left;
+    text-transform: none;
+}
+
+.search-btn fa-icon {
+    font-size: small;
+}
+
+.search-btn fa-icon:hover {
+    color: #ccc;
+}
+
+.search-btn {
+    padding: 8px 14px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    float: left;    
+}
+
+.search-btn:hover {
+    background-color: $hover-color;
+}
+
