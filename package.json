@@ -12,6 +12,8 @@
   "author": "Gregory Rothstein",
   "license": "ISC",
   "dependencies": {
-    "@angular/cli": "^10.0.1"
+    "@angular/cli": "^10.0.1",
+    "@ng-bootstrap/ng-bootstrap": "^7.0.0",
+    "bootstrap": "^4.5.0"
   }
 }
