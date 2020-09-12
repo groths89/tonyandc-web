@@ -1,5 +1,5 @@
 .logo-container {
-    margin: 50px auto;
+    margin: 0 auto;
     width: 80%;
 }
 
@@ -17,7 +17,7 @@ app-search {
 .hdr-bar {
     height: 50px;
     width: 80%;
-	margin: 0 auto;
+    margin: 0.75em auto 0;
 }
 .nav-wrap {
     background-color: #ffffff;
@@ -31,4 +31,5 @@ app-search {
     width: 80%;
     margin: 0 auto;
     transition: width 0.5s;
+    z-index: 999;
 }

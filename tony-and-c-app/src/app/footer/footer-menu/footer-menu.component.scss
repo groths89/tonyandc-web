@@ -1,0 +1,25 @@
+@import '../../app.component.scss';
+.menu-wrapper {
+    width: 80%;
+    height: 2.75em;
+    margin: 12px auto 0;
+    padding: 0;
+}
+
+.footer-menu ul {
+    padding: 0;
+    width: 30em;
+    float: left;
+}
+
+.footer-menu ul li {
+    float: left;
+    list-style: none;
+    padding: 0 1em;
+    font-size: 9pt;
+}
+
+.menu-wrapper p{
+    float: right;
+    font-size: 8pt;
+}

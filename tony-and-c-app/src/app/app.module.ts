@@ -12,6 +12,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { EmailNewsletterComponent } from './footer/email-newsletter/email-newsletter.component';
+import { FooterMenuComponent } from './footer/footer-menu/footer-menu.component';
+import { ImgCarouselComponent } from './home/img-carousel/img-carousel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,16 @@ import { EmailNewsletterComponent } from './footer/email-newsletter/email-newsle
     SearchComponent,
     LogoComponent,
     HomeComponent,
+    ImgCarouselComponent,
     FooterComponent,
-    EmailNewsletterComponent
+    EmailNewsletterComponent,
+    FooterMenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

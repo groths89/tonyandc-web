@@ -1,12 +1,18 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
+
 $hover-color: #e43d99;
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: GothamPro, sans-serif;
     text-transform: uppercase;
     margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	letter-spacing: 2pt;
+	font-weight: 200;
+	font-style: normal;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,13 +58,20 @@ table {
 }
 .page-container{
     width: 80%;
-	margin: 0 auto;
-	min-height: 2000px;
+	margin: 1em auto 1em;
+	min-height: 600px;
 }
 
 app-header{
     width: 80%;
 	margin: 0 auto;
+	z-index: 999;
+	position: -webkit-sticky !important;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+	position: sticky;
+	top: 0;
 }
 
 app-footer{

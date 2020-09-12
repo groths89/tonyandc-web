@@ -8,10 +8,9 @@ fieldset {
     box-sizing: border-box;
 }
 
-input:hover {
+input:hover, :focus {
     border-bottom: 1px solid #636363;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
     box-sizing: border-box;
@@ -26,9 +25,9 @@ input {
     color: #888;
     padding: 8px 10px;
     margin-right: 5px;
-    font-family: 'Lato', Arial, Verdana, Tahoma, Sans-serif;
-    font-weight: 300;
-    font-size: 1em;
+    font-family: GothamPro, sans-serif;
+    font-weight: 200;
+    font-size: 0.60em;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: all .3s ease-in-out;
@@ -37,7 +36,6 @@ input {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     float: left;
-    text-transform: none;
 }
 
 .search-btn fa-icon {
