@@ -36,7 +36,7 @@ jobs:
 
       # Install Dependencies
       - name: Install dependencies
-        run: npm ci
+        run: npm install
         
       # Build Angular Application
       - name: Build
