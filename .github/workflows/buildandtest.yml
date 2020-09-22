@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: build and test
+name: Build Angular
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -18,9 +18,11 @@ defaults:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    name: Build and Test
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -28,38 +30,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          retore-keys: |
+            ${{ runner.os }}-node-
+
       # Setup Node
-      - name: Use Node 12.x
+      - name: Node ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: ${{ matrix.node-version }}
 
       # Install Dependencies
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies and Build
+        run: |
+          npm i
+          npm run build
         
-      # Build Angular Application
-      - name: Build
-        run: npm run build:ci
-        
-      # Test Angular Application
-      - name: Test
-        run: npm run test:ci
-      
-      # Archive Build
-      - name: Archive build
-        if: success()
-        uses: actions/upload-artifact@v1
-        with:
-          name: deploy_dist
-          path: dist
-      
-      # Archive Code Coverage
-      - name: Archive code coverage result
-        if: success()
-        uses: actions/upload-artifact@v1
-        with:
-          name: deploy_coverage
-          path: coverage
+      - name: Push Build to Releases
+          uses: ncipollo/release-action@v1
+          with:
+            artifacts: "dist/angular-githubaction/*"
+            token: ${{ secrets.TOKEN }}
         
       
