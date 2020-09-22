@@ -40,7 +40,7 @@ jobs:
         
       # Build Angular Application
       - name: Build
-        run: npm run build:ci
+        run: ng build
         
       # Test Angular Application
       - name: Test
