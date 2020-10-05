@@ -6,9 +6,9 @@ name: Build Angular
 # events but only for the master branch
 on:
   push:
-    branches: master
+    branches: develop
   pull_request:
-    branches: master
+    branches: develop
 
 defaults:
   run:
@@ -37,23 +37,5 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           retore-keys: |
             ${{ runner.os }}-node-
-
-      # Setup Node
-      - name: Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      # Install Dependencies
-      - name: Install dependencies and Build
-        run: |
-          npm i
-          npm run build
-        
-      - name: Push Build to Releases
-          uses: ncipollo/release-action@v1
-          with:
-            artifacts: "dist/angular-githubaction/*"
-            token: ${{ secrets.TOKEN }}
         
       

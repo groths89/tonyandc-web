@@ -1,0 +1,21 @@
+{
+  "name": "tonyandc-web",
+  "version": "1.0.0",
+  "description": "New business ecommerce website for Briana Aka Tony And C",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "eCommerce"
+  ],
+  "author": "Gregory Rothstein",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^10.0.1",
+    "@ng-bootstrap/ng-bootstrap": "^7.0.0",
+    "bootstrap": "^4.5.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1"
+  }
+}
