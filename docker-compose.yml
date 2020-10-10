@@ -8,9 +8,9 @@ services:
         container_name: front-container_name
         restart: always
 
-    backend:
-        build: "express-backend/"
-        ports:
-            - "3000:3000"
-        container_name: back-container_name
-        restart: always
+    #backend:
+    #    build: "express-backend/"
+    #    ports:
+    #        - "3000:3000"
+    #    container_name: back-container_name
+    #    restart: always
