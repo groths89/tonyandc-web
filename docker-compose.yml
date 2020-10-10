@@ -1,14 +1,14 @@
-version: 2
+version: "2"
 
 services:
-    frontend: tony-and-c-frontend
+    frontend:
         build: "tony-and-c-app/"
         ports:
             - "4200:4200"
         container_name: front-container_name
         restart: always
 
-    backend: tony-an-c-backend
+    backend:
         build: "express-backend/"
         ports:
             - "3000:3000"
