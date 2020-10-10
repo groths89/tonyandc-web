@@ -4,6 +4,7 @@
   "description": "New business ecommerce website for Briana Aka Tony And C",
   "main": "index.js",
   "scripts": {
+    "start": "npm start",
     "test": "test"
   },
   "keywords": [
