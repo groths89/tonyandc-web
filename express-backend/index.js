@@ -2,7 +2,7 @@ const express = require('express');
 const compression = require('compression');
 const app = express();
 const port = 3000;
-const app_folder = 'dist/'
+const app_folder = '../tony-and-c-app/dist/'
 
 app.use(compression());
 
