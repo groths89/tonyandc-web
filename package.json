@@ -16,6 +16,6 @@
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
     "bootstrap": "^4.5.0",
     "compression": "^1.7.4",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
